@@ -108,13 +108,13 @@ document.addEventListener('DOMContentLoaded', function() {
         if (hash) {
             switchTab(hash);
         } else {
-            switchTab('writing');
+            switchTab('home');
         }
     });
 
-    // Initialize with writing tab if no hash
+    // Initialize with home tab if no hash
     if (!window.location.hash) {
-        switchTab('writing');
+        switchTab('home');
     } else {
         const hash = window.location.hash.slice(1);
         switchTab(hash);
