@@ -96,19 +96,18 @@ body {
 }
 
 .profile-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 40px;
     margin-top: 40px;
 }
 
 .profile-image {
     width: 200px;
     height: 200px;
-    border-radius: 50%;
+    border-radius: 0;
     overflow: hidden;
     border: 3px solid #f0f0f0;
+    float: left;
+    margin-right: 30px;
+    margin-bottom: 20px;
 }
 
 .profile-img {
@@ -131,8 +130,8 @@ body {
 }
 
 .profile-text {
-    max-width: 600px;
     text-align: left;
+    overflow: hidden;
 }
 
 .intro-text,
@@ -473,13 +472,12 @@ body {
         font-size: 2rem;
     }
     
-    .profile-section {
-        gap: 30px;
-    }
-    
     .profile-image {
         width: 150px;
         height: 150px;
+        float: none;
+        margin: 0 auto 20px auto;
+        display: block;
     }
     
     .publications-grid {
@@ -512,5 +510,8 @@ body {
     .profile-image {
         width: 120px;
         height: 120px;
+        float: none;
+        margin: 0 auto 20px auto;
+        display: block;
     }
 } 
