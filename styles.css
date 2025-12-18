@@ -236,6 +236,19 @@ body {
 }
 
 /* Writing */
+.subscription-embed-container {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0 40px 0;
+    width: 100%;
+}
+
+.subscription-embed-container iframe {
+    max-width: 100%;
+    width: 480px;
+    height: 320px;
+}
+
 .writing-list {
     display: flex;
     flex-direction: column;
@@ -499,6 +512,12 @@ body {
     
     .container {
         padding: 20px 15px;
+    }
+    
+    .subscription-embed-container iframe {
+        width: 100% !important;
+        max-width: 100%;
+        height: 320px;
     }
 }
 
