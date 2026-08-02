@@ -306,6 +306,51 @@ body {
     border-bottom-color: transparent;
 }
 
+/* Artifacts */
+.artifact-list {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.artifact-divider {
+    border: 0;
+    height: 1px;
+    background-color: #e5e5e5;
+    margin: 36px 0;
+}
+
+.artifact-title {
+    font-size: 1.35rem;
+    font-weight: 600;
+    line-height: 1.3;
+    margin-bottom: 6px;
+}
+
+.artifact-title a {
+    color: #333;
+    text-decoration: none;
+    border-bottom: 1px solid #333;
+    transition: border-color 0.3s ease;
+}
+
+.artifact-title a:hover {
+    border-bottom-color: transparent;
+}
+
+.artifact-meta {
+    color: #666;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 12px;
+}
+
+.artifact-summary {
+    color: #555;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
 /* Post header with source badges */
 .post-header {
     display: flex;

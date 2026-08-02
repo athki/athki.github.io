@@ -34,7 +34,7 @@ jobs:
         from datetime import datetime
         
         # Replace with your actual Substack name
-        SUBSTACK_NAME = 'computingpower'
+        SUBSTACK_NAME = 'humanandtheloop'
         RSS_URL = f'https://{SUBSTACK_NAME}.substack.com/feed'
         
         print(f'Fetching RSS feed from: {RSS_URL}')
