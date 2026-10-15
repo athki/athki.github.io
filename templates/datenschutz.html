@@ -1,0 +1,90 @@
+{% extends "base.html" %}
+{% block lang %}de{% endblock %}
+{% block title %}Datenschutzerklärung — {{ site.name }}{% endblock %}
+{% block description %}Datenschutzhinweise für christianpfrang.com{% endblock %}
+{% block canonical %}datenschutz.html{% endblock %}
+{% block body %}
+  <section class="page legal">
+    <h1>Datenschutzerklärung</h1>
+    <p class="status">This privacy notice is provided in German, as the site is operated from Germany. In short: no cookies, no analytics, no third-party fonts or scripts; the host (GitHub Pages) keeps ordinary server logs, and emailing me means I process what you send.</p>
+
+    <h2>1. Verantwortlicher</h2>
+    <p>
+      Verantwortlich für die Verarbeitung personenbezogener Daten auf dieser Website ist:<br>
+      {{ legal.name }}<br>
+      {{ legal.street }}<br>
+      {{ legal.city }}, {{ legal.country }}<br>
+      E-Mail: <a href="mailto:{{ legal.email }}">{{ legal.email }}</a>
+    </p>
+
+    <h2>2. Überblick</h2>
+    <p>
+      Diese Website ist eine statische Seite ohne Nutzerkonten, Formulare, Cookies, Tracking- oder
+      Analysewerkzeuge. Es werden keine Schriftarten, Skripte oder sonstigen Inhalte von Drittanbietern
+      nachgeladen. Personenbezogene Daten fallen nur in zwei Fällen an: beim technischen Abruf der Seite
+      durch den Hosting-Anbieter (Ziffer 3) und wenn Sie mir eine E-Mail schreiben (Ziffer 4).
+    </p>
+
+    <h2>3. Hosting (GitHub Pages)</h2>
+    <p>
+      Diese Website wird über GitHub Pages bereitgestellt, einen Dienst der GitHub, Inc., 88 Colin P. Kelly
+      Jr. Street, San Francisco, CA 94107, USA (für Nutzer in der EU: GitHub B.V., Prins Bernhardplein 200,
+      1097 JB Amsterdam, Niederlande). Beim Aufruf der Seite verarbeitet GitHub technisch notwendige
+      Zugriffsdaten, insbesondere die IP-Adresse, Datum und Uhrzeit des Abrufs, die aufgerufene Seite,
+      den verwendeten Browser und das Betriebssystem. GitHub nutzt diese Daten nach eigenen Angaben zur
+      Sicherstellung von Sicherheit und Integrität des Dienstes und zur Erfüllung gesetzlicher Pflichten.
+      Ich selbst habe keinen Zugriff auf diese Protokolldaten.
+    </p>
+    <p>
+      Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO. Mein berechtigtes Interesse liegt in der sicheren,
+      stabilen und kostengünstigen Bereitstellung der Website. Die Verarbeitung findet teilweise in den
+      USA statt. GitHub ist nach eigenen Angaben unter dem EU-U.S. Data Privacy Framework zertifiziert;
+      darüber hinaus bestehen Standardvertragsklauseln der EU-Kommission. Näheres finden Sie in der
+      Datenschutzerklärung von GitHub:
+      <a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement" rel="noopener">docs.github.com/site-policy/privacy-policies/github-general-privacy-statement</a>.
+    </p>
+
+    <h2>4. Kontakt per E-Mail</h2>
+    <p>
+      Wenn Sie mir eine E-Mail schreiben, verarbeite ich Ihre E-Mail-Adresse, den Inhalt der Nachricht
+      und die darin enthaltenen Angaben, um Ihre Anfrage zu beantworten. Rechtsgrundlage ist Art. 6 Abs. 1
+      lit. b DSGVO, soweit die Anfrage auf einen Vertrag abzielt, im Übrigen Art. 6 Abs. 1 lit. f DSGVO
+      (berechtigtes Interesse an der Beantwortung von Anfragen). Die Daten werden gelöscht, sobald sie
+      für den Zweck nicht mehr erforderlich sind und keine gesetzlichen Aufbewahrungspflichten
+      entgegenstehen.
+    </p>
+
+    <h2>5. Externe Links</h2>
+    <p>
+      Diese Website verlinkt auf Angebote Dritter (unter anderem LinkedIn, X und Substack). Beim Aufruf
+      dieser Links gelten die Datenschutzbestimmungen des jeweiligen Anbieters. Durch das bloße Anzeigen
+      dieser Website werden keine Daten an diese Anbieter übermittelt.
+    </p>
+    <p>
+      Das unter <a href="https://agent-dashboard.christianpfrang.com" rel="noopener">agent-dashboard.christianpfrang.com</a>
+      erreichbare Dashboard ist ein eigenständiges Angebot mit eigenen Datenschutzhinweisen.
+    </p>
+
+    <h2>6. Ihre Rechte</h2>
+    <p>
+      Sie haben gegenüber mir das Recht auf Auskunft (Art. 15 DSGVO), Berichtigung (Art. 16 DSGVO),
+      Löschung (Art. 17 DSGVO), Einschränkung der Verarbeitung (Art. 18 DSGVO) und Datenübertragbarkeit
+      (Art. 20 DSGVO). Soweit die Verarbeitung auf Art. 6 Abs. 1 lit. f DSGVO beruht, können Sie ihr aus
+      Gründen, die sich aus Ihrer besonderen Situation ergeben, jederzeit widersprechen (Art. 21 DSGVO).
+      Wenden Sie sich dazu an die oben genannte E-Mail-Adresse.
+    </p>
+    <p>
+      Außerdem haben Sie das Recht, sich bei einer Datenschutzaufsichtsbehörde zu beschweren
+      (Art. 77 DSGVO). Für mich zuständig ist das Bayerische Landesamt für Datenschutzaufsicht (BayLDA),
+      Promenade 18, 91522 Ansbach, <a href="https://www.lda.bayern.de" rel="noopener">www.lda.bayern.de</a>.
+    </p>
+
+    <h2>7. Änderungen</h2>
+    <p>
+      Ich passe diese Datenschutzerklärung an, wenn sich die Website oder die Rechtslage ändert. Es gilt
+      jeweils die hier veröffentlichte Fassung.
+    </p>
+
+    <p class="status">Stand: {{ legal.updated }}</p>
+  </section>
+{% endblock %}

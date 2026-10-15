@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+{% block lang %}de{% endblock %}
+{% block title %}Impressum — {{ site.name }}{% endblock %}
+{% block description %}Anbieterkennzeichnung für christianpfrang.com{% endblock %}
+{% block canonical %}impressum.html{% endblock %}
+{% block body %}
+  <section class="page legal">
+    <h1>Impressum</h1>
+    <p class="status">This page is the provider identification required under German law (§ 5 DDG). The site itself is in English.</p>
+
+    <h2>Angaben gemäß § 5 DDG</h2>
+    <p>
+      {{ legal.name }}<br>
+      {{ legal.street }}<br>
+      {{ legal.city }}<br>
+      {{ legal.country }}
+    </p>
+
+    <h2>Kontakt</h2>
+    <p>
+      E-Mail: <a href="mailto:{{ legal.email }}">{{ legal.email }}</a>{% if legal.phone %}<br>
+      Telefon: {{ legal.phone }}{% endif %}
+    </p>
+
+    {% if legal.vat_id %}
+    <h2>Umsatzsteuer-Identifikationsnummer</h2>
+    <p>Umsatzsteuer-Identifikationsnummer gemäß § 27a Umsatzsteuergesetz: {{ legal.vat_id }}</p>
+    {% endif %}
+
+    <h2>Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV</h2>
+    <p>{{ legal.name }}, Anschrift wie oben.</p>
+
+    <h2>Haftung für Inhalte</h2>
+    <p>
+      Die Inhalte dieser Seiten wurden mit Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und
+      Aktualität der Inhalte wird keine Gewähr übernommen. Als Diensteanbieter bin ich für eigene Inhalte
+      auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Die Inhalte stellen keine Rechts-
+      oder Steuerberatung dar.
+    </p>
+
+    <h2>Haftung für Links</h2>
+    <p>
+      Diese Seiten enthalten Links zu externen Websites Dritter, auf deren Inhalte ich keinen Einfluss habe.
+      Für diese fremden Inhalte ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich.
+      Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße überprüft;
+      rechtswidrige Inhalte waren zu diesem Zeitpunkt nicht erkennbar. Bei Bekanntwerden von
+      Rechtsverletzungen werde ich derartige Links umgehend entfernen.
+    </p>
+
+    <h2>Verbraucherstreitbeilegung</h2>
+    <p>
+      Ich bin nicht bereit und nicht verpflichtet, an Streitbeilegungsverfahren vor einer
+      Verbraucherschlichtungsstelle teilzunehmen.
+    </p>
+
+    <p class="status">Stand: {{ legal.updated }}</p>
+  </section>
+{% endblock %}

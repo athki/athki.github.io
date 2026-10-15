@@ -1,117 +1,42 @@
-# Personal Website
+# christianpfrang.com
 
-A simple, elegant, and lightweight personal website built with HTML, CSS, and JavaScript.
+Static site, served by GitHub Pages from this repo (custom domain via `CNAME`).
 
-## Features
+## Where things live
 
-- Clean, minimalist design
-- Responsive layout
-- Tab-based navigation (Home, Publications, Writing)
-- Lightweight and fast loading
-- Easy to maintain and customize
+| File | What it is |
+|---|---|
+| `content.yml` | **Every piece of text on the site** except the artifact entries. Edit this to change copy. |
+| `artifacts.yml` | **The Artifacts page entries**, newest first. To add one, paste a new block at the top (template in the file's header). |
+| `templates/` | The layout (Jinja templates): `base.html` (nav + footer), `index.html`, `artifacts.html`, `impressum.html`, `datenschutz.html`. |
+| `site.css` | The look. Colours are variables at the top. |
+| `build.py` | Turns `content.yml` + `artifacts.yml` + `templates/` into the HTML pages below. |
+| `index.html`, `artifacts.html`, `impressum.html`, `datenschutz.html` | **Generated.** Don't edit by hand; edit `content.yml` and rebuild. |
+| `images/og.png`, `images/favicon.svg` | Link-preview image and tab icon. |
+| `CNAME` | Tells GitHub Pages to serve the site at www.christianpfrang.com. Don't delete. |
+| `files/` | PDFs linked from the Artifacts page. |
 
-## File Structure
+## Change a text and preview it
 
-```
-athki/
-├── index.html          # Main HTML file
-├── styles.css          # CSS styles
-├── script.js           # JavaScript functionality
-└── README.md          # This file
-```
-
-## How to Test View the Website
-
-### Option 1: Open directly in browser
-1. Simply double-click on `index.html` to open it in your default web browser
-2. The website will load locally and you can test all functionality
-
-### Option 2: Use a local server (recommended)
-1. Open your terminal/command prompt
-2. Navigate to the project directory: `cd /path/to/athki`
-3. Start a simple HTTP server:
-
-**Using Python 3:**
 ```bash
-python3 -m http.server 8000
+pip install pyyaml jinja2      # once
+python3 build.py               # regenerates the four HTML pages
+python3 -m http.server 8000    # open http://localhost:8000
 ```
 
-**Using Python 2:**
-```bash
-python -m SimpleHTTPServer 8000
-```
+Then commit and push; GitHub Pages picks it up in about a minute. Commit the generated HTML too — Pages serves the files as they are, there is no build step on GitHub's side.
 
-**Using Node.js (if you have it installed):**
-```bash
-npx serve .
-```
+The cheapest way to iterate: open the repo in Claude Code and say "change the belief line on the trust card to …"; it edits `content.yml`, runs the build, and you look at the result.
 
-4. Open your browser and go to `http://localhost:8000`
+## Before going live
 
-### Option 3: Using VS Code Live Server
-1. Install the "Live Server" extension in VS Code
-2. Right-click on `index.html`
-3. Select "Open with Live Server"
+Search `content.yml` for `TODO`:
 
-## Customization
+- `where.entries`: the event dates (or delete an entry). Each entry can also take a `link` to the event page.
+- `legal`: street, postcode/city and USt-IdNr. The Impressum and Datenschutzerklärung are drafts written for this exact setup (static page, no cookies, no analytics, no forms, GitHub Pages as host). Read them once; they are not legal advice.
 
-### Adding Your Content
+## Notes
 
-1. **Home Page**: Edit the content in `index.html` within the `#home` section:
-   - Replace `[Your Name]` with your actual name
-   - Update the profession/description
-   - Add your mission/purpose
-   - Replace the placeholder interests with your actual interests
-
-2. **Profile Image**: Replace the image placeholder:
-   - Add your image file to the project directory
-   - Replace the `<div class="image-placeholder">` with:
-   ```html
-   <img src="your-image.jpg" alt="Your Name" style="width: 100%; height: 100%; object-fit: cover;">
-   ```
-
-3. **Publications**: Update the publications section with your actual publications
-
-4. **Writing**: Add your articles and writing samples
-
-### Styling Customization
-
-- Edit `styles.css` to change colors, fonts, spacing, etc.
-- The design uses a clean, minimalist approach with subtle animations
-- All colors are defined as CSS variables for easy customization
-
-## Deployment
-
-### GitHub Pages (Free)
-1. Push your code to a GitHub repository
-2. Go to repository Settings > Pages
-3. Select "Deploy from a branch" and choose your main branch
-4. Your site will be available at `https://yourusername.github.io/repository-name`
-
-### Netlify (Free)
-1. Drag and drop your project folder to [netlify.com](https://netlify.com)
-2. Your site will be deployed instantly with a unique URL
-
-### Vercel (Free)
-1. Connect your GitHub repository to [vercel.com](https://vercel.com)
-2. Vercel will automatically deploy your site
-
-## Browser Compatibility
-
-This website works on all modern browsers:
-- Chrome
-- Firefox
-- Safari
-- Edge
-
-## Performance
-
-The website is optimized for speed:
-- Minimal JavaScript
-- Optimized CSS
-- No external dependencies
-- Fast loading times
-
-## License
-
-This project is open source and available under the MIT License. 
+- `images/profile.jpg` is the photo from the previous site, kept in case it comes back; nothing links to it right now.
+- `.nojekyll` tells GitHub Pages to serve the files as-is instead of running Jekyll over them.
+- Fonts are the system font stack, so nothing is loaded from Google or any other third party.

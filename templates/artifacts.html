@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block title %}{{ artifacts_page.heading }} — {{ site.name }}{% endblock %}
+{% block description %}{{ artifacts_page.intro }}{% endblock %}
+{% block canonical %}artifacts.html{% endblock %}
+{% block body %}
+  <section class="page">
+    <h1>{{ artifacts_page.heading }}</h1>
+    <p class="lead">{{ artifacts_page.intro }}</p>
+    <div class="work-list">
+      {% for item in artifacts %}
+      <article class="work-item">
+        <h2><a href="{{ item.link }}"{% if item.link.startswith('http') %} rel="noopener"{% endif %}>{{ item.header }}</a></h2>
+        <p class="status">{{ item.subheader }}</p>
+        <p>{{ item.text }}</p>
+      </article>
+      {% endfor %}
+    </div>
+  </section>
+{% endblock %}

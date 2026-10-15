@@ -1,0 +1,61 @@
+# ============================================================
+#  Artifacts page (artifacts.html): projects and significant writing.
+#
+#  To add one: copy the block below, paste it at the TOP of the
+#  list (newest first; the page shows entries in this order),
+#  fill it in, then run:  python3 build.py
+#
+#  - header: Title of the thing
+#    subheader: Type · Where · Month Year
+#    text: >-
+#      A few sentences on what it is. Lines can wrap freely;
+#      they are joined into one paragraph.
+#    link: https://...   (or files/name.pdf for a PDF in files/)
+# ============================================================
+
+- header: Cryptography for Agentic Commerce
+  subheader: Reading group syllabus · Draft for discussion · September 2026
+  text: >-
+    A draft syllabus for a reading group on making agentic commerce
+    trustworthy. Eight sessions work outwards from the confused deputy:
+    principals and mental models, delegation and attenuation, identity and
+    reputation, payment authorization and settlement, fair exchange and
+    disputes, selective disclosure and compliance predicates, verifiable
+    governance, and proof of being human. Classical cryptography and
+    security engineering papers are paired with the emerging agent commerce
+    protocols and their attack literature.
+  link: files/draft-syllabus-agcomm-cryptography.pdf
+
+- header: Trusting agents is a cryptography problem
+  subheader: Guest lecture · Technical University of Munich · July 2026
+  text: >-
+    Slides from a guest lecture for Cryptography for Distributed Systems at
+    TUM. The talk frames agentic commerce around five prerequisites (agent
+    identity, delegation, credential isolation, settlement, and disputes)
+    and sets out how the competing camps behind AP2, TAP, ACP and x402 each
+    answer them. It then turns to keeping secrets from your own agent, by
+    way of credential isolation and zero-knowledge proofs, and closes on
+    compute as a commodity: attestation, verification, and paying on proof.
+  link: files/tum-presentation.pdf
+
+- header: Agent Commerce Overview
+  subheader: Live dashboard · since July 2026
+  text: >-
+    A running view of the market for services that agents buy. It tracks
+    pricing bands, service categories and settlement data across Coinbase
+    CDP Bazaar, Apify Store, x402scan and mppscan, ranking endpoints both
+    by estimated spend and by unique payers, a demand signal considerably
+    harder to wash-trade than raw transaction counts. Refreshed daily.
+  link: https://agent-dashboard.christianpfrang.com
+
+- header: How to sell to an AI without losing your shirt
+  subheader: Essay · Substack · April 2026
+  text: >-
+    When software agents do the buying, the products worth selling are the
+    ones an agent cannot cheaply reproduce for itself. This essay works
+    through what agents will actually pay for (permission to act, verified
+    data, identity checks, insurance and reliance warranties, physical
+    execution, raw compute) and argues that durable margin comes from
+    network effects, accumulated context and process knowledge rather than
+    from competing on price.
+  link: https://humanandtheloop.substack.com/p/how-to-sell-to-an-ai-without-losing

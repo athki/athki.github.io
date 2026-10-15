@@ -1,2 +1,0 @@
-# Always accept remote version for auto-generated files
-data/substack-posts.json merge=theirs

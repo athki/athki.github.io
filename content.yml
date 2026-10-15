@@ -1,0 +1,144 @@
+# ============================================================
+#  christianpfrang.com — all site text lives in this one file.
+#  Edit here, then run:  python3 build.py   (see README.md)
+#  Lines starting with # are comments and are ignored.
+# ============================================================
+
+site:
+  name: Christian Pfrang
+  url: https://www.christianpfrang.com
+  # <title> of the homepage and the text search engines / link previews show
+  title: Christian Pfrang — Building computable commerce
+  description: >-
+    Christian Pfrang builds the pieces that let software agents buy, sell and
+    sign within the law: verified invoicing, ownership checks, and a verified
+    payee for x402. Former Director General, Bavarian Ministry of Digital Affairs.
+  # The address shown in the contact band and used by every "Email" link.
+  email: hello@christianpfrang.com        # forwarding alias; set it up at your mail provider before going live
+  og_image: images/og.png
+
+# Top navigation, left to right.
+nav:
+  - label: Home
+    href: index.html
+  - label: Artifacts
+    href: artifacts.html
+
+hero:
+  headline: Building computable commerce.
+  lead: >-
+    Software agents are starting to buy, sell, and sign. They can only go as
+    fast as the rules can be checked. I build the pieces that make the rules
+    computable: a verifier that checks an invoice in milliseconds, an ownership
+    check an agent runs before it pays, and a key in DNS that proves who it's
+    paying. Where the rules can't be computed yet, I work with the people who
+    write them. Each piece leaves evidence that holds up in a dispute.
+  proof:
+    - Former Director General, Bavarian Ministry of Digital Affairs · Shaped the EU Data Act and AI Act
+    - Lex columnist, Financial Times · Highbridge Capital · PhD Applied Mathematics, Brown · Lecturer, TUM
+  cta: Email me
+  cta_subject: Hello from christianpfrang.com
+  secondary: See what I'm building ↓
+
+building:
+  heading: What I'm building
+  cards:
+    - name: Verified invoicing
+      status: Working prototype
+      text: Invoices from code verified against the legal rules a tax adviser checks.
+    - name: Ownership (UBO) checker
+      status: In development
+      text: Who are you actually dealing with? A UBO check an agent runs before it pays.
+    - name: Verified payee for x402
+      status: Working prototype · spec in draft
+      text: A key in your DNS record binds a wallet to your domain, so an agent can check before paying.
+
+services:
+  heading: Working with me
+  intro: "Building this is funded by work with investors and technology companies on the same frontier:"
+  cards:
+    - name: Formal verification
+      who: For investment teams
+      question: What's real, who's serious, and what to ask a founder.
+      belief: >-
+        Two stories: verification is becoming the whole of software engineering,
+        and it is how legal services will scale.
+      format: 90-minute briefing + memo.
+      link: Email about a briefing →
+      subject: Briefing on formal verification
+    - name: Trust design review
+      who: For teams whose agents pay
+      question: Who the agent acts for, who it pays, what evidence it leaves.
+      belief: >-
+        Trusting agents is a cryptography problem: identity, access, delegation,
+        and auditability.
+      format: Half-day review + memo.
+      link: Email about a review →
+      subject: Trust design review
+    - name: Regulation as roadmap
+      who: For CFOs and compliance leads
+      question: Which controls need no human, what a regulator will accept.
+      belief: >-
+        The shape of future commerce is already written in the AI Act, GENIUS
+        Act, MiCA, and AML law. The review reads them together.
+      format: Review + build list.
+      link: Email about a roadmap →
+      subject: Regulation as roadmap
+
+where:
+  heading: Where to find me
+  # Keep this list short and current. Delete entries once the date has passed.
+  # link is optional: the event's web page. Leave it "" and the text shows without a link.
+  entries:
+    - date: Date tba                        # TODO e.g. "14 Nov 2026"
+      text: Building at the FMX AI Vibe Check hackathon
+      place: Munich
+      link: ""
+    - date: Date tba                        # TODO
+      text: Building at the financial services hackathon
+      place: London
+      link: ""
+    - date: Date tba                        # TODO
+      text: Lean in Munich meetup
+      place: Munich
+      link: ""
+  hook: If you're there, email me and we'll find twenty minutes.
+
+contact:
+  text: If any of this is a problem you have, email me. A first conversation costs nothing.
+
+# Social links in the footer, shown as icon + label + handle (e.g. "LinkedIn@cpfrang").
+# icon is one of: linkedin, x, substack
+footer:
+  links:
+    - label: LinkedIn
+      handle: "@cpfrang"
+      icon: linkedin
+      href: https://www.linkedin.com/in/cpfrang/
+    - label: X
+      handle: "@humanandtheloop"
+      icon: x
+      href: https://twitter.com/humanandtheloop
+    - label: Substack
+      handle: "@humanandtheloop"
+      icon: substack
+      href: https://humanandtheloop.substack.com
+
+# ---------- Artifacts page (artifacts.html) ----------
+# The entries themselves live in artifacts.yml.
+artifacts_page:
+  heading: Artifacts
+  intro: Things I've made that you can read, use, or argue with.
+
+# ---------- Legal pages (impressum.html, datenschutz.html) ----------
+# Fill these in before the site goes live. Everything in [brackets] is a placeholder.
+legal:
+  name: Christian Pfrang
+  street: "[Straße Hausnummer]"           # TODO
+  city: "[PLZ Ort]"                       # TODO
+  country: Deutschland
+  email: hello@christianpfrang.com
+  phone: ""                               # optional, e.g. "+49 89 ..."; leave empty to omit
+  vat_id: "[USt-IdNr.]"                   # TODO your USt-IdNr., e.g. "DE123456789" (required if you have one)
+  # Date shown as "Stand" on both legal pages
+  updated: Oktober 2026

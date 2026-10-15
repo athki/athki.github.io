@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+{% block canonical %}{% endblock %}
+{% block body %}
+  <section class="hero">
+    <h1>{{ hero.headline }}</h1>
+    <p class="lead">{{ hero.lead }}</p>
+    <p class="proof">
+      {% for line in hero.proof %}<span>{{ line }}</span>{% if not loop.last %}<br>{% endif %}{% endfor %}
+    </p>
+    <p class="cta-row">
+      <a class="button" href="mailto:{{ site.email }}?subject={{ hero.cta_subject | urlencode }}">{{ hero.cta }}</a>
+      <a class="quiet-link" href="#building">{{ hero.secondary }}</a>
+    </p>
+  </section>
+
+  <section id="building" class="section">
+    <h2>{{ building.heading }}</h2>
+    <div class="cards">
+      {% for card in building.cards %}
+      <article class="card card-tint">
+        <h3>{{ card.name }}</h3>
+        <p class="status">{{ card.status }}</p>
+        <p>{{ card.text }}</p>
+      </article>
+      {% endfor %}
+    </div>
+  </section>
+
+  <section id="working-with-me" class="section">
+    <h2>{{ services.heading }}</h2>
+    <p class="intro">{{ services.intro }}</p>
+    <div class="cards">
+      {% for card in services.cards %}
+      <article class="card">
+        <h3>{{ card.name }}</h3>
+        <p class="status">{{ card.who }}</p>
+        <p>{{ card.question }}</p>
+        <p>{{ card.belief }}</p>
+        <p class="format">{{ card.format }}</p>
+        <p class="card-link"><a href="mailto:{{ site.email }}?subject={{ card.subject | urlencode }}">{{ card.link }}</a></p>
+      </article>
+      {% endfor %}
+    </div>
+  </section>
+
+  <section id="where-to-find-me" class="section">
+    <h2>{{ where.heading }}</h2>
+    <ul class="where">
+      {% for item in where.entries %}
+      <li><span class="date">{{ item.date }}</span> · {% if item.link is defined and item.link %}<a href="{{ item.link }}" rel="noopener">{{ item.text }}</a>{% else %}{{ item.text }}{% endif %} · {{ item.place }}</li>
+      {% endfor %}
+    </ul>
+    <p class="hook">{{ where.hook }}</p>
+  </section>
+
+  <section id="contact" class="contact">
+    <p>{{ contact.text }}</p>
+    <p><a class="email" href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+  </section>
+{% endblock %}
