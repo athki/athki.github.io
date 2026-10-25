@@ -122,7 +122,7 @@ where:
   hook: If you're there, email me and we'll find twenty minutes.
 
 contact:
-  text: If you think I can help, email me! A first conversation costs nothing.
+  text: If you think I can help, email me!
 
 # Social links in the footer, shown as icon + label + handle (e.g. "LinkedIn@cpfrang").
 # icon is one of: linkedin, x, substack
