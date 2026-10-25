@@ -29,7 +29,7 @@ hero:
   lead: >-
     Personal shopping agents are the first wave of what is coming:
     Automated economic decision making at scale. Agents can only go as
-    fast as they can check the rules are followed and their counterparty is trustworty.
+    fast as they can check the rules are followed and their counterparty is trustworthy.
     That is the emerging bottleneck. I'm interested in building tools and infrastructure that alleviate this bottleneck.
 
     Code verification and cryptography are the building blocks that can make the agentic economy trustworthy. I run the [Lean in Munich meetup](https://luma.com/user/usr-mYj1Mw12kCdvDSb),
@@ -73,8 +73,8 @@ services:
       who: For investment teams
       question: What's real, who's serious, and what to ask a founder.
       belief: >-
-        I brief you on two theses: If it's not worth verifying, then it's not worth engineering.
-        Legal services can scale and automate through formally  verified code.
+        I brief you on my two theses: 1) If it's not worth verifying, then it's not worth engineering.
+        2) Legal services can scale and automate through formally verified code.
       format: briefing + memo.
       link: Email about a briefing →
       subject: Briefing on formal verification
@@ -88,8 +88,8 @@ services:
       link: Email about a review →
       subject: Trust design review
     - name: Frontier regulation in AI, compute and commerce
-      who: For CFOs, policy teams and compliance leads
-      question: What emerging policy areas are critical for my business?
+      who: For CFOs, policy teams, compliance leads and investors
+      question: What emerging policy areas are critical for my business and investments?
       belief: >-
         The shape of future commerce is already written in the AI Act, GENIUS
         Act, MiCA, and AML law. I bring the global picture together for you.
