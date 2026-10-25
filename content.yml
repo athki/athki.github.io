@@ -68,6 +68,8 @@ building:
         I'm building tools that provably follow the applicable rules, without revealing private information.
     - name: Verified payee for x402
       status: Working prototype
+      link: https://x402-merchant-verification.christianpfrang.com
+      link_text: See how it works →
       text: A key in your DNS record binds a wallet to your domain, so an agent can check before paying.
 
 services:
