@@ -34,7 +34,7 @@
     <h2>{{ building.heading }}</h2>
     <div class="cards">
       {% for card in building.cards %}
-      <article class="card card-tint">
+      <article class="card card-tint{% if card.link is defined %} card-linked{% endif %}">
         <h3>{% if card.link is defined %}<a href="{{ card.link }}">{{ card.name }}</a>{% else %}{{ card.name }}{% endif %}</h3>
         <p class="status">{{ card.status }}</p>
         <p>{{ card.text }}</p>

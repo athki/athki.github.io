@@ -70,7 +70,7 @@ building:
 
 services:
   heading: How I can help you
-  intro: "I fund myself by working with investors and companies that are working on the same frontier:"
+  intro: "I fund myself by working with investors and companies that are advancing the same frontier:"
   cards:
     - name: Formal verification
       who: For investment teams
