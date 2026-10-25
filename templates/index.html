@@ -35,9 +35,12 @@
     <div class="cards">
       {% for card in building.cards %}
       <article class="card card-tint">
-        <h3>{{ card.name }}</h3>
+        <h3>{% if card.link is defined %}<a href="{{ card.link }}">{{ card.name }}</a>{% else %}{{ card.name }}{% endif %}</h3>
         <p class="status">{{ card.status }}</p>
         <p>{{ card.text }}</p>
+        {% if card.link is defined %}
+        <p class="card-link"><a href="{{ card.link }}">{{ card.link_text }}</a></p>
+        {% endif %}
       </article>
       {% endfor %}
     </div>

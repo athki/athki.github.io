@@ -52,9 +52,12 @@ hero:
 
 building:
   heading: What I'm building
+  # link and link_text are optional: add them to a card to make it clickable.
   cards:
     - name: Verified invoicing
       status: Working prototype
+      link: https://ai-e-rechnung.christianpfrang.com
+      link_text: See how it works →
       text: Invoices from chat. Auditable, and explainable, generated from code verified against the legal rules a tax adviser checks.
     - name: Ownership (UBO) checker
       status: In development
@@ -67,7 +70,7 @@ building:
 
 services:
   heading: How I can help you
-  intro: "I fund myself by working with investors and companies that are pushing the same frontier:"
+  intro: "I fund myself by working with investors and companies that are working on the same frontier:"
   cards:
     - name: Formal verification
       who: For investment teams
