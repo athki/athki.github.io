@@ -4,6 +4,9 @@
   <section class="hero">
     <h1>{{ hero.headline }}</h1>
     {{ hero.lead | paragraphs }}
+    {% if hero.proof_heading is defined and hero.proof_heading %}
+    <p class="proof-heading">{{ hero.proof_heading }}</p>
+    {% endif %}
     <p class="proof">
       {% for line in hero.proof %}<span>{% if line is mapping %}{% for k, v in line.items() %}{{ k }}: {{ v }}{% endfor %}{% else %}{{ line }}{% endif %}</span>{% if not loop.last %}<br>{% endif %}{% endfor %}
     </p>

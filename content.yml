@@ -41,8 +41,10 @@ hero:
 
     This world requires builders that can interface with governments and understand the liabilities that can arise in moving real money. I've done both.
 
+  # Small heading above the proof lines. Leave it "" to hide it.
+  proof_heading: Background
   proof:
-    - Former Director General, Bavarian Ministry of Digital Affairs: Cloud and AI strategy · EU digital regulation · international affairs
+    - Director General, Bavarian Ministry of Digital Affairs: Cloud and AI strategy · EU digital regulation · international affairs
     - Derivs Trader & Quant: JPMorgan, Highbridge Capital
     - Lex columnist, Financial Times: Analyzing the intersection of regulation, geopolitics and business
     - Academics: PhD Applied Mathematics, Brown · Guest Scientist, TUM
