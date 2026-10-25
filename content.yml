@@ -10,9 +10,8 @@ site:
   # <title> of the homepage and the text search engines / link previews show
   title: Christian Pfrang — Building computable commerce
   description: >-
-    Christian Pfrang builds the pieces that let software agents buy, sell and
-    sign within the law: verified invoicing, ownership checks, and a verified
-    payee for x402. Former Director General, Bavarian Ministry of Digital Affairs.
+    Christian Pfrang is building tools for using agents in highly regulated environments. Examples include:
+    verified invoicing, ultimate beneficial ownership checks, and DNS-based merchant verification for x402.
   # The address shown in the contact band and used by every "Email" link.
   email: hello@christianpfrang.com        # forwarding alias; set it up at your mail provider before going live
   og_image: images/og.png
@@ -26,16 +25,27 @@ nav:
 
 hero:
   headline: Building computable commerce.
+  # Leave a blank line between paragraphs. Links: [link text](https://...)
   lead: >-
-    Software agents are starting to buy, sell, and sign. They can only go as
-    fast as the rules can be checked. I build the pieces that make the rules
-    computable: a verifier that checks an invoice in milliseconds, an ownership
-    check an agent runs before it pays, and a key in DNS that proves who it's
-    paying. Where the rules can't be computed yet, I work with the people who
-    write them. Each piece leaves evidence that holds up in a dispute.
+    Personal shopping agents are the first wave of what is coming:
+    Automated economic decision making at scale. Agents can only go as
+    fast as they can check the rules are followed and their counterparty is trustworty.
+    That is the emerging bottleneck. I'm interested in building tools and infrastructure that alleviate this bottleneck.
+
+    Code verification and cryptography are the building blocks that can make the agentic economy trustworthy. I run the [Lean in Munich meetup](https://luma.com/user/usr-mYj1Mw12kCdvDSb),
+    and was a guest lecturer in cryptography at Technical University of Munich.
+
+    I've built an MCP server that generates compliant invoices via chat, an AI tool that calculates beneficial ownership
+    from private documents in minutes and a simple key in DNS that proves who it's
+    paying. I use cryptography and formal languages to make sure that every decision remains explainable, auditable and within constraints.
+
+    This world requires builders that can interface with governments and understand the liabilities that can arise in moving real money. I've done both.
+
   proof:
-    - Former Director General, Bavarian Ministry of Digital Affairs · Shaped the EU Data Act and AI Act
-    - Lex columnist, Financial Times · Highbridge Capital · PhD Applied Mathematics, Brown · Lecturer, TUM
+    - Former Director General, Bavarian Ministry of Digital Affairs: cloud and AI strategy · EU digital regulation
+    - Derivs Trader & Quant: JPMorgan, Highbridge Capital
+    - Lex columnist, Financial Times: Analyzing the intersection of regulation, geopolitics and business
+    - Academics: PhD Applied Mathematics, Brown · Guest Scientist, TUM
   cta: Email me
   cta_subject: Hello from christianpfrang.com
   secondary: See what I'm building ↓
@@ -45,67 +55,69 @@ building:
   cards:
     - name: Verified invoicing
       status: Working prototype
-      text: Invoices from code verified against the legal rules a tax adviser checks.
+      text: Invoices from chat. Auditable, and explainable, generated from code verified against the legal rules a tax adviser checks.
     - name: Ownership (UBO) checker
       status: In development
-      text: Who are you actually dealing with? A UBO check an agent runs before it pays.
+      text: >-
+        Determining a UBO requires following control relationships that emerge from private documents, not public registers.
+        I'm building tools that provably follow the applicable rules, without revealing private information.
     - name: Verified payee for x402
-      status: Working prototype · spec in draft
+      status: Working prototype
       text: A key in your DNS record binds a wallet to your domain, so an agent can check before paying.
 
 services:
-  heading: Working with me
-  intro: "Building this is funded by work with investors and technology companies on the same frontier:"
+  heading: How I can help you
+  intro: "I fund myself by working with investors and companies that are pushing the same frontier:"
   cards:
     - name: Formal verification
       who: For investment teams
       question: What's real, who's serious, and what to ask a founder.
       belief: >-
-        Two stories: verification is becoming the whole of software engineering,
-        and it is how legal services will scale.
-      format: 90-minute briefing + memo.
+        I brief you on two theses: If it's not worth verifying, then it's not worth engineering.
+        Legal services can scale and automate through formally  verified code.
+      format: briefing + memo.
       link: Email about a briefing →
       subject: Briefing on formal verification
     - name: Trust design review
-      who: For teams whose agents pay
-      question: Who the agent acts for, who it pays, what evidence it leaves.
+      who: For teams building harnesses that want to harden them with verification and cryptography
+      question: How to enforce deterministic constraints and create auditable evidence traces
       belief: >-
         Trusting agents is a cryptography problem: identity, access, delegation,
         and auditability.
       format: Half-day review + memo.
       link: Email about a review →
       subject: Trust design review
-    - name: Regulation as roadmap
-      who: For CFOs and compliance leads
-      question: Which controls need no human, what a regulator will accept.
+    - name: Frontier regulation in AI, compute and commerce
+      who: For CFOs, policy teams and compliance leads
+      question: What emerging policy areas are critical for my business?
       belief: >-
         The shape of future commerce is already written in the AI Act, GENIUS
-        Act, MiCA, and AML law. The review reads them together.
-      format: Review + build list.
-      link: Email about a roadmap →
-      subject: Regulation as roadmap
+        Act, MiCA, and AML law. I bring the global picture together for you.
+      format: briefing, workshop, memo
+      link: Email about an engagement →
+      subject: Frontier regulation
 
 where:
   heading: Where to find me
   # Keep this list short and current. Delete entries once the date has passed.
   # link is optional: the event's web page. Leave it "" and the text shows without a link.
   entries:
-    - date: Date tba                        # TODO e.g. "14 Nov 2026"
+    - date: "31 Oct - 1 Nov 2026"                       # TODO e.g. "14 Nov 2026"
       text: Building at the FMX AI Vibe Check hackathon
+      place: San Francisco
+      link: "https://fmxai.org/vibecheck/"
+    - date: "23 Nov 2026"                  # TODO
+      text: Lean in Munich meetup with Kevin Buzzard about the future of mathematics
       place: Munich
-      link: ""
-    - date: Date tba                        # TODO
-      text: Building at the financial services hackathon
+      link: "https://luma.com/10gfh4l4"
+    - date: "25 Nov 2026"                        # TODO
+      text: Langchain Financial Services Hackathon
       place: London
-      link: ""
-    - date: Date tba                        # TODO
-      text: Lean in Munich meetup
-      place: Munich
-      link: ""
+      link: "https://fieldevents.langchain.com/langchainfinancialserviceshack"
   hook: If you're there, email me and we'll find twenty minutes.
 
 contact:
-  text: If any of this is a problem you have, email me. A first conversation costs nothing.
+  text: If you think I can help, email me! A first conversation costs nothing.
 
 # Social links in the footer, shown as icon + label + handle (e.g. "LinkedIn@cpfrang").
 # icon is one of: linkedin, x, substack
@@ -134,11 +146,12 @@ artifacts_page:
 # Fill these in before the site goes live. Everything in [brackets] is a placeholder.
 legal:
   name: Christian Pfrang
-  street: "[Straße Hausnummer]"           # TODO
-  city: "[PLZ Ort]"                       # TODO
+  co: "c/o POSTFLEX PFX-424-359"
+  street: "Emsdettener Straße 10"           # TODO
+  city: "48268 Greven"                       # TODO
   country: Deutschland
   email: hello@christianpfrang.com
   phone: ""                               # optional, e.g. "+49 89 ..."; leave empty to omit
-  vat_id: "[USt-IdNr.]"                   # TODO your USt-IdNr., e.g. "DE123456789" (required if you have one)
+  vat_id: "DE461296147"                   # TODO your USt-IdNr., e.g. "DE123456789" (required if you have one)
   # Date shown as "Stand" on both legal pages
   updated: Oktober 2026

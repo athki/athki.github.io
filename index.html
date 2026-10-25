@@ -4,12 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Christian Pfrang — Building computable commerce</title>
-  <meta name="description" content="Christian Pfrang builds the pieces that let software agents buy, sell and sign within the law: verified invoicing, ownership checks, and a verified payee for x402. Former Director General, Bavarian Ministry of Digital Affairs.">
+  <meta name="description" content="Christian Pfrang is building tools for using agents in highly regulated environments. Examples include: verified invoicing, ultimate beneficial ownership checks, and DNS-based merchant verification for x402.">
   <link rel="canonical" href="https://www.christianpfrang.com/">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Christian Pfrang">
   <meta property="og:title" content="Christian Pfrang — Building computable commerce">
-  <meta property="og:description" content="Christian Pfrang builds the pieces that let software agents buy, sell and sign within the law: verified invoicing, ownership checks, and a verified payee for x402. Former Director General, Bavarian Ministry of Digital Affairs.">
+  <meta property="og:description" content="Christian Pfrang is building tools for using agents in highly regulated environments. Examples include: verified invoicing, ultimate beneficial ownership checks, and DNS-based merchant verification for x402.">
   <meta property="og:url" content="https://www.christianpfrang.com/">
   <meta property="og:image" content="https://www.christianpfrang.com/images/og.png">
   <meta name="twitter:card" content="summary_large_image">
@@ -33,13 +33,47 @@
   <main id="main" class="wrap">
   <section class="hero">
     <h1>Building computable commerce.</h1>
-    <p class="lead">Software agents are starting to buy, sell, and sign. They can only go as fast as the rules can be checked. I build the pieces that make the rules computable: a verifier that checks an invoice in milliseconds, an ownership check an agent runs before it pays, and a key in DNS that proves who it&#39;s paying. Where the rules can&#39;t be computed yet, I work with the people who write them. Each piece leaves evidence that holds up in a dispute.</p>
+    <p class="lead">Personal shopping agents are the first wave of what is coming: Automated economic decision making at scale. Agents can only go as fast as they can check the rules are followed and their counterparty is trustworty. That is the emerging bottleneck. I&#39;m interested in building tools and infrastructure that alleviate this bottleneck.</p>
+    <p class="lead">Code verification and cryptography are the building blocks that can make the agentic economy trustworthy. I run the <a href="https://luma.com/user/usr-mYj1Mw12kCdvDSb" rel="noopener">Lean in Munich meetup</a>, and was a guest lecturer in cryptography at Technical University of Munich.</p>
+    <p class="lead">I&#39;ve built an MCP server that generates compliant invoices via chat, an AI tool that calculates beneficial ownership from private documents in minutes and a simple key in DNS that proves who it&#39;s paying. I use cryptography and formal languages to make sure that every decision remains explainable, auditable and within constraints.</p>
+    <p class="lead">This world requires builders that can interface with governments and understand the liabilities that can arise in moving real money. I&#39;ve done both.</p>
     <p class="proof">
-<span>Former Director General, Bavarian Ministry of Digital Affairs · Shaped the EU Data Act and AI Act</span><br><span>Lex columnist, Financial Times · Highbridge Capital · PhD Applied Mathematics, Brown · Lecturer, TUM</span>    </p>
+<span>Former Director General, Bavarian Ministry of Digital Affairs: cloud and AI strategy · EU digital regulation</span><br><span>Derivs Trader &amp; Quant: JPMorgan, Highbridge Capital</span><br><span>Lex columnist, Financial Times: Analyzing the intersection of regulation, geopolitics and business</span><br><span>Academics: PhD Applied Mathematics, Brown · Guest Scientist, TUM</span>    </p>
     <p class="cta-row">
       <a class="button" href="mailto:hello@christianpfrang.com?subject=Hello%20from%20christianpfrang.com">Email me</a>
       <a class="quiet-link" href="#building">See what I&#39;m building ↓</a>
     </p>
+  </section>
+
+  <section id="working-with-me" class="section">
+    <h2>How I can help you</h2>
+    <p class="intro">I fund myself by working with investors and companies that are pushing the same frontier:</p>
+    <div class="cards">
+      <article class="card">
+        <h3>Formal verification</h3>
+        <p class="status">For investment teams</p>
+        <p>What&#39;s real, who&#39;s serious, and what to ask a founder.</p>
+        <p>I brief you on two theses: If it&#39;s not worth verifying, then it&#39;s not worth engineering. Legal services can scale and automate through formally  verified code.</p>
+        <p class="format">briefing + memo.</p>
+        <p class="card-link"><a href="mailto:hello@christianpfrang.com?subject=Briefing%20on%20formal%20verification">Email about a briefing →</a></p>
+      </article>
+      <article class="card">
+        <h3>Trust design review</h3>
+        <p class="status">For teams building harnesses that want to harden them with verification and cryptography</p>
+        <p>How to enforce deterministic constraints and create auditable evidence traces</p>
+        <p>Trusting agents is a cryptography problem: identity, access, delegation, and auditability.</p>
+        <p class="format">Half-day review + memo.</p>
+        <p class="card-link"><a href="mailto:hello@christianpfrang.com?subject=Trust%20design%20review">Email about a review →</a></p>
+      </article>
+      <article class="card">
+        <h3>Frontier regulation in AI, compute and commerce</h3>
+        <p class="status">For CFOs, policy teams and compliance leads</p>
+        <p>What emerging policy areas are critical for my business?</p>
+        <p>The shape of future commerce is already written in the AI Act, GENIUS Act, MiCA, and AML law. I bring the global picture together for you.</p>
+        <p class="format">briefing, workshop, memo</p>
+        <p class="card-link"><a href="mailto:hello@christianpfrang.com?subject=Frontier%20regulation">Email about an engagement →</a></p>
+      </article>
+    </div>
   </section>
 
   <section id="building" class="section">
@@ -48,48 +82,17 @@
       <article class="card card-tint">
         <h3>Verified invoicing</h3>
         <p class="status">Working prototype</p>
-        <p>Invoices from code verified against the legal rules a tax adviser checks.</p>
+        <p>Invoices from chat. Auditable, and explainable, generated from code verified against the legal rules a tax adviser checks.</p>
       </article>
       <article class="card card-tint">
         <h3>Ownership (UBO) checker</h3>
         <p class="status">In development</p>
-        <p>Who are you actually dealing with? A UBO check an agent runs before it pays.</p>
+        <p>Determining a UBO requires following control relationships that emerge from private documents, not public registers. I&#39;m building tools that provably follow the applicable rules, without revealing private information.</p>
       </article>
       <article class="card card-tint">
         <h3>Verified payee for x402</h3>
-        <p class="status">Working prototype · spec in draft</p>
+        <p class="status">Working prototype</p>
         <p>A key in your DNS record binds a wallet to your domain, so an agent can check before paying.</p>
-      </article>
-    </div>
-  </section>
-
-  <section id="working-with-me" class="section">
-    <h2>Working with me</h2>
-    <p class="intro">Building this is funded by work with investors and technology companies on the same frontier:</p>
-    <div class="cards">
-      <article class="card">
-        <h3>Formal verification</h3>
-        <p class="status">For investment teams</p>
-        <p>What&#39;s real, who&#39;s serious, and what to ask a founder.</p>
-        <p>Two stories: verification is becoming the whole of software engineering, and it is how legal services will scale.</p>
-        <p class="format">90-minute briefing + memo.</p>
-        <p class="card-link"><a href="mailto:hello@christianpfrang.com?subject=Briefing%20on%20formal%20verification">Email about a briefing →</a></p>
-      </article>
-      <article class="card">
-        <h3>Trust design review</h3>
-        <p class="status">For teams whose agents pay</p>
-        <p>Who the agent acts for, who it pays, what evidence it leaves.</p>
-        <p>Trusting agents is a cryptography problem: identity, access, delegation, and auditability.</p>
-        <p class="format">Half-day review + memo.</p>
-        <p class="card-link"><a href="mailto:hello@christianpfrang.com?subject=Trust%20design%20review">Email about a review →</a></p>
-      </article>
-      <article class="card">
-        <h3>Regulation as roadmap</h3>
-        <p class="status">For CFOs and compliance leads</p>
-        <p>Which controls need no human, what a regulator will accept.</p>
-        <p>The shape of future commerce is already written in the AI Act, GENIUS Act, MiCA, and AML law. The review reads them together.</p>
-        <p class="format">Review + build list.</p>
-        <p class="card-link"><a href="mailto:hello@christianpfrang.com?subject=Regulation%20as%20roadmap">Email about a roadmap →</a></p>
       </article>
     </div>
   </section>
@@ -97,15 +100,15 @@
   <section id="where-to-find-me" class="section">
     <h2>Where to find me</h2>
     <ul class="where">
-      <li><span class="date">Date tba</span> · Building at the FMX AI Vibe Check hackathon · Munich</li>
-      <li><span class="date">Date tba</span> · Building at the financial services hackathon · London</li>
-      <li><span class="date">Date tba</span> · Lean in Munich meetup · Munich</li>
+      <li><span class="date">31 Oct - 1 Nov 2026</span> · <a href="https://fmxai.org/vibecheck/" rel="noopener">Building at the FMX AI Vibe Check hackathon</a> · San Francisco</li>
+      <li><span class="date">23 Nov 2026</span> · <a href="https://luma.com/10gfh4l4" rel="noopener">Lean in Munich meetup with Kevin Buzzard about the future of mathematics</a> · Munich</li>
+      <li><span class="date">25 Nov 2026</span> · <a href="https://fieldevents.langchain.com/langchainfinancialserviceshack" rel="noopener">Langchain Financial Services Hackathon</a> · London</li>
     </ul>
     <p class="hook">If you&#39;re there, email me and we&#39;ll find twenty minutes.</p>
   </section>
 
   <section id="contact" class="contact">
-    <p>If any of this is a problem you have, email me. A first conversation costs nothing.</p>
+    <p>If you think I can help, email me! A first conversation costs nothing.</p>
     <p><a class="email" href="mailto:hello@christianpfrang.com">hello@christianpfrang.com</a></p>
   </section>
   </main>

@@ -11,6 +11,9 @@
     <h2>Angaben gemäß § 5 DDG</h2>
     <p>
       {{ legal.name }}<br>
+      {% if legal.co is defined and legal.co %}
+      {{ legal.co }}<br>
+      {% endif %}
       {{ legal.street }}<br>
       {{ legal.city }}<br>
       {{ legal.country }}

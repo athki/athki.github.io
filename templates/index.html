@@ -3,27 +3,14 @@
 {% block body %}
   <section class="hero">
     <h1>{{ hero.headline }}</h1>
-    <p class="lead">{{ hero.lead }}</p>
+    {{ hero.lead | paragraphs }}
     <p class="proof">
-      {% for line in hero.proof %}<span>{{ line }}</span>{% if not loop.last %}<br>{% endif %}{% endfor %}
+      {% for line in hero.proof %}<span>{% if line is mapping %}{% for k, v in line.items() %}{{ k }}: {{ v }}{% endfor %}{% else %}{{ line }}{% endif %}</span>{% if not loop.last %}<br>{% endif %}{% endfor %}
     </p>
     <p class="cta-row">
       <a class="button" href="mailto:{{ site.email }}?subject={{ hero.cta_subject | urlencode }}">{{ hero.cta }}</a>
       <a class="quiet-link" href="#building">{{ hero.secondary }}</a>
     </p>
-  </section>
-
-  <section id="building" class="section">
-    <h2>{{ building.heading }}</h2>
-    <div class="cards">
-      {% for card in building.cards %}
-      <article class="card card-tint">
-        <h3>{{ card.name }}</h3>
-        <p class="status">{{ card.status }}</p>
-        <p>{{ card.text }}</p>
-      </article>
-      {% endfor %}
-    </div>
   </section>
 
   <section id="working-with-me" class="section">
@@ -38,6 +25,19 @@
         <p>{{ card.belief }}</p>
         <p class="format">{{ card.format }}</p>
         <p class="card-link"><a href="mailto:{{ site.email }}?subject={{ card.subject | urlencode }}">{{ card.link }}</a></p>
+      </article>
+      {% endfor %}
+    </div>
+  </section>
+
+  <section id="building" class="section">
+    <h2>{{ building.heading }}</h2>
+    <div class="cards">
+      {% for card in building.cards %}
+      <article class="card card-tint">
+        <h3>{{ card.name }}</h3>
+        <p class="status">{{ card.status }}</p>
+        <p>{{ card.text }}</p>
       </article>
       {% endfor %}
     </div>

@@ -12,6 +12,9 @@
     <p>
       Verantwortlich für die Verarbeitung personenbezogener Daten auf dieser Website ist:<br>
       {{ legal.name }}<br>
+      {% if legal.co is defined and legal.co %}
+      {{ legal.co }}<br>
+      {% endif %}
       {{ legal.street }}<br>
       {{ legal.city }}, {{ legal.country }}<br>
       E-Mail: <a href="mailto:{{ legal.email }}">{{ legal.email }}</a>
