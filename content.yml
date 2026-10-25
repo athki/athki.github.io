@@ -36,8 +36,8 @@ hero:
     and was a guest lecturer in cryptography at Technical University of Munich.
 
     I've built an MCP server that generates compliant invoices via chat, an AI tool that calculates beneficial ownership
-    from private documents in minutes and a simple key in DNS that proves who it's
-    paying. I use cryptography and formal languages to make sure that every decision remains explainable, auditable and within constraints.
+    from private documents in minutes and a simple DNS-based merchant verification framework for
+    x402 resource servers. I use cryptography and formal languages to make sure that every decision remains explainable, auditable and within constraints.
 
     This world requires builders that can interface with governments and understand the liabilities that can arise in moving real money. I've done both.
 
