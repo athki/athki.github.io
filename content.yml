@@ -48,8 +48,7 @@ hero:
     - Derivs Trader & Quant: JPMorgan, Highbridge Capital
     - Lex columnist, Financial Times: Analyzing the intersection of regulation, geopolitics and business
     - Academics: PhD Applied Mathematics, Brown · Guest Scientist, TUM
-  cta: Email me
-  cta_subject: Hello from christianpfrang.com
+  cta: Get in touch
   secondary: See what I'm building ↓
 
 building:
@@ -83,8 +82,7 @@ services:
         I brief you on my two theses: 1) If it's not worth verifying, then it's not worth engineering.
         2) Legal services can scale and automate through formally verified code.
       format: briefing + memo.
-      link: Email about a briefing →
-      subject: Briefing on formal verification
+      link: Get in touch ↓
     - name: Trust design review
       who: For teams building harnesses that want to harden them with verification and cryptography
       question: How to enforce deterministic constraints and create auditable evidence traces
@@ -92,8 +90,7 @@ services:
         Trusting agents is a cryptography problem: identity, access, delegation,
         and auditability.
       format: Half-day review + memo.
-      link: Email about a review →
-      subject: Trust design review
+      link: Get in touch ↓
     - name: Frontier regulation in AI, compute and commerce
       who: For CFOs, policy teams, compliance leads and investors
       question: What emerging policy areas are critical for my business and investments?
@@ -101,8 +98,7 @@ services:
         The shape of future commerce is already written in the AI Act, GENIUS
         Act, MiCA, and AML law. I bring the global picture together for you.
       format: briefing, workshop, memo
-      link: Email about an engagement →
-      subject: Frontier regulation
+      link: Get in touch ↓
 
 where:
   heading: Where to find me

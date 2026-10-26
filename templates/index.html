@@ -11,7 +11,7 @@
       {% for line in hero.proof %}<span>{% if line is mapping %}{% for k, v in line.items() %}{{ k }}: {{ v }}{% endfor %}{% else %}{{ line }}{% endif %}</span>{% if not loop.last %}<br>{% endif %}{% endfor %}
     </p>
     <p class="cta-row">
-      <a class="button" href="mailto:{{ site.email }}?subject={{ hero.cta_subject | urlencode }}">{{ hero.cta }}</a>
+      <a class="button" href="#contact">{{ hero.cta }}</a>
       <a class="quiet-link" href="#building">{{ hero.secondary }}</a>
     </p>
   </section>
@@ -27,7 +27,7 @@
         <p>{{ card.question }}</p>
         <p>{{ card.belief }}</p>
         <p class="format">{{ card.format }}</p>
-        <p class="card-link"><a href="mailto:{{ site.email }}?subject={{ card.subject | urlencode }}">{{ card.link }}</a></p>
+        <p class="card-link"><a href="#contact">{{ card.link }}</a></p>
       </article>
       {% endfor %}
     </div>
@@ -61,6 +61,6 @@
 
   <section id="contact" class="contact">
     <p>{{ contact.text }}</p>
-    <p><a class="email" href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+    <p class="email">{{ site.email }}</p>
   </section>
 {% endblock %}
