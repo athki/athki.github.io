@@ -13,6 +13,19 @@
 #    link: https://...   (or files/name.pdf for a PDF in files/)
 # ============================================================
 
+- header: Cryptography for Agentic Commerce
+  subheader: Reading group syllabus · v1.0 · October 2026
+  text: >-
+    A syllabus for a reading group on making agentic commerce
+    trustworthy. Eight sessions work outwards from the confused deputy:
+    principals and mental models, delegation and attenuation, identity and
+    reputation, payment authorization and settlement, fair exchange and
+    disputes, selective disclosure and compliance predicates, verifiable
+    governance, and proof of being human. Classical cryptography and
+    security engineering papers are paired with the emerging agent commerce
+    protocols and their attack literature.
+  link: files/agcomm-cryptography_syllabus_v1.pdf
+
 - header: The crisis of faith at the heart of mathematics
   subheader: Essay · Substack · September 2026
   text: >-
@@ -24,19 +37,6 @@
     contribute for real, and calls on mathematicians to examine their culture
     openly and make the case for what the field is worth.
   link: https://humanandtheloop.substack.com/p/the-crisis-of-faith-at-the-heart
-
-- header: Cryptography for Agentic Commerce
-  subheader: Reading group syllabus · Draft for discussion · September 2026
-  text: >-
-    A draft syllabus for a reading group on making agentic commerce
-    trustworthy. Eight sessions work outwards from the confused deputy:
-    principals and mental models, delegation and attenuation, identity and
-    reputation, payment authorization and settlement, fair exchange and
-    disputes, selective disclosure and compliance predicates, verifiable
-    governance, and proof of being human. Classical cryptography and
-    security engineering papers are paired with the emerging agent commerce
-    protocols and their attack literature.
-  link: files/draft-syllabus-agcomm-cryptography.pdf
 
 - header: Trusting agents is a cryptography problem
   subheader: Guest lecture · Technical University of Munich · July 2026
