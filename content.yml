@@ -113,10 +113,6 @@ where:
       text: Lean in Munich meetup with Kevin Buzzard about the future of mathematics
       place: Munich
       link: "https://luma.com/10gfh4l4"
-    - date: "25 Nov 2026"                        # TODO
-      text: Langchain Financial Services Hackathon
-      place: London
-      link: "https://fieldevents.langchain.com/langchainfinancialserviceshack"
   hook: If you're there, email me and we'll find twenty minutes.
 
 contact:

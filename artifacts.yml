@@ -13,6 +13,19 @@
 #    link: https://...   (or files/name.pdf for a PDF in files/)
 # ============================================================
 
+- header: Cryptography for Agentic Commerce, Session 1
+  subheader: Lecture slides · TUM School of CIT Garching · November 2026
+  text: >-
+    Slides from the first session of the Cryptography for Agentic Commerce
+    reading group at TUM. Following one agent-to-agent transaction from
+    discovery to accounting, the session introduces the mental models the
+    course builds on: the confused deputy and its agentic versions, with
+    capabilities as the remedy; the gap between natural-language intent and
+    formal mandates; layered identity; trust economics after Akerlof's market
+    for lemons; what regulators demand; disputes versus atomicity; trusted
+    execution; post-quantum risk; and verifiability versus accountability.
+  link: files/cryptography_agcomm_session1.pdf
+
 - header: Cryptography for Agentic Commerce
   subheader: Reading group syllabus · v1.0 · October 2026
   text: >-
