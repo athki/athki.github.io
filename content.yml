@@ -105,10 +105,6 @@ where:
   # Keep this list short and current. Delete entries once the date has passed.
   # link is optional: the event's web page. Leave it "" and the text shows without a link.
   entries:
-    - date: "31 Oct - 1 Nov 2026"                       # TODO e.g. "14 Nov 2026"
-      text: Building at the FMX AI Vibe Check hackathon
-      place: San Francisco
-      link: "https://fmxai.org/vibecheck/"
     - date: "23 Nov 2026"                  # TODO
       text: Lean in Munich meetup with Kevin Buzzard about the future of mathematics
       place: Munich
