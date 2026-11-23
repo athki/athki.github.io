@@ -21,7 +21,7 @@ except ImportError:
 
 ROOT = pathlib.Path(__file__).resolve().parent
 
-LINK = re.compile(r"\[([^\]]+)\]\((https?://[^)\s]+)\)")
+LINK = re.compile(r"\[([^\]]+)\]\(((?:https?://|files/)[^)\s]+)\)")
 
 
 def paragraphs(text: str) -> markupsafe.Markup:
@@ -36,7 +36,7 @@ def paragraphs(text: str) -> markupsafe.Markup:
     return markupsafe.Markup("\n    ".join(out))
 
 def links(text: str) -> markupsafe.Markup:
-    """Escape text, turning [text](https://...) into a link. For artifact descriptions."""
+    """Escape text, turning [text](https://...) or [text](files/...) into a link. For artifact descriptions."""
     html = str(markupsafe.escape(" ".join(text.split())))
     return markupsafe.Markup(LINK.sub(r'<a href="\2" rel="noopener">\1</a>', html))
 
