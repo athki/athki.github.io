@@ -11,7 +11,7 @@
       <article class="work-item">
         <h2><a href="{{ item.link }}"{% if item.link.startswith('http') %} rel="noopener"{% endif %}>{{ item.header }}</a></h2>
         <p class="status">{{ item.subheader }}</p>
-        <p>{{ item.text }}</p>
+        <p>{{ item.text | links }}</p>
       </article>
       {% endfor %}
     </div>

@@ -35,6 +35,11 @@ def paragraphs(text: str) -> markupsafe.Markup:
         out.append(f'<p class="lead">{html}</p>')
     return markupsafe.Markup("\n    ".join(out))
 
+def links(text: str) -> markupsafe.Markup:
+    """Escape text, turning [text](https://...) into a link. For artifact descriptions."""
+    html = str(markupsafe.escape(" ".join(text.split())))
+    return markupsafe.Markup(LINK.sub(r'<a href="\2" rel="noopener">\1</a>', html))
+
 # output file -> template file
 PAGES = {
     "index.html": "index.html",
@@ -55,6 +60,7 @@ def main() -> None:
         undefined=jinja2.StrictUndefined,  # a typo in content.yml fails loudly instead of rendering blank
     )
     env.filters["paragraphs"] = paragraphs
+    env.filters["links"] = links
     built = datetime.date.today().isoformat()
     # Changes whenever site.css changes, so browsers never show a stale stylesheet.
     css_version = hashlib.sha256((ROOT / "site.css").read_bytes()).hexdigest()[:8]

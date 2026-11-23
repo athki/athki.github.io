@@ -13,6 +13,18 @@
 #    link: https://...   (or files/name.pdf for a PDF in files/)
 # ============================================================
 
+- header: KI löst Probleme, an denen Mathematiker seit Jahrzehnten arbeiten. Was jetzt?
+  subheader: Interview · 1E9 Magazin · November 2026
+  text: >-
+    An interview with Wolfgang Kerler, editor-in-chief of 1E9, published on
+    17 November 2026, about AI-generated proofs after OpenAI's catalogue of
+    results on around 370 research questions. It covers how Lean lets machines
+    check proofs, why turning a question into a formal statement still needs
+    human understanding, what engineers and biologists gain when a proof
+    checker is in their pocket, and how mathematics as an institution should
+    respond. [Read it on 1e9.community](https://www.1e9.community/magazin/ki-l%C3%B6st-probleme-an-denen-mathematiker-seit-jahrzehnten-arbeiten-was-jetzt).
+  link: files/cpfrang-1e9-interview-ai-math.pdf
+
 - header: Cryptography for Agentic Commerce, Session 1
   subheader: Lecture slides · TUM School of CIT Garching · November 2026
   text: >-
